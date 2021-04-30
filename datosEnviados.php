@@ -17,6 +17,6 @@ $para = 'jaguercompany@gmail.com';
 $asunto = 'Datos compartidos por el usuario';
 
 mail($para, $asunto, utf8_decode($message), $header);
-header("Location:contactos.html");
+header("Location: contactos.html");
 
 ?>
