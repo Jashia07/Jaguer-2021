@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <meta name="author" content="">
+ <link rel="stylesheet" href="contactStyles.css">
+
+ <title>Contáctanos</title>
+ </head>
+ <body>
+    <header class="header">
+        <div class="cabecera Inicio">  
+            <a href="index.html"><button class="logo" ><img src="logo.jpg" alt="" ></button></a>
+            <span class="menu-icono"><img src="abrirMenu1.png" alt=""></span>
+
+            <nav class="navegador">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="productosServicios.html">Productos y servicios</a></li>
+                    <li><a href="jaguerBlog.html">Blog</a></li>
+                    <li><a href="contactos.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+    <div class="cabecera">
+    <a name="inicio"><p style="color: transparent";>.</p></a>
+    <br><br>
+    
+    <form id="form1" action="datosEnviados.php" method="POST">
+        <fieldset class="ladoIzquierdo">
+            <div>
+                <label for="Nombre"><b>Nombre(s):</b></label><br>
+                <input type="text" name="nameCont" id="Nombre" placeholder="Escribe tu nombre(s)">
+            </div>
+            <div>
+                <label for="Edad"><b>Edad:</b></label><br>
+                <input type="text" name="edad" id="Edad" placeholder="Escribe tu edad">
+            </div>
+            <div>
+                <label for="Correo"><b>Correo:</b></label><br>
+                <input type="text" name="correo"id="Correo" placeholder="Escribe tu correo:" >
+            </div>
+            <br>
+            <div>
+                <button type="submit" style="cursor:pointer; color: black; background-color:#f0eee2; font-size: 110%; border-radius: 5%;"><b>Enviar</b></button>
+            </div>
+            <br>
+        </fieldset>
+    </form>
+    </div>
+    <div class="cabecera">
+        <fieldset class="ladoDerecho">
+
+            <div id="select1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1260.0395705643718!2d-97.10346156086952!3d18.849227911099028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c502b3b2dd421d%3A0x84eb96c761b5b30d!2sColegio%20Preparatorio%20de%20Orizaba!5e0!3m2!1ses-419!2smx!4v1619582106805!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" id="mapa1"></iframe>
+
+            </div>
+            <br>
+            <div id="select2">
+                <div>
+                    <i id="puntos">...</i><em id="tituloCont">Contactos:</em><br><br>
+                    <i id="puntos">...</i><em><i id="cont">2722269543</i><button onclick="copy('#cont')" id="botonCopy">Copiar</button></em><br>
+                    <i id="puntos">...</i><em><i id="cont2">2721077964</i><button onclick="copy('#cont2')" id="botonCopy">Copiar</button></em><br>
+                    <i id="puntos">...</i><em><i id="cont3">jaguercompany@gmail.com</i><button onclick="copy('#cont3')" id="botonCopy">Copiar</button></em>
+                    <a href="https://www.facebook.com/jashia.hernandez" target="_blank"><img src="facebookImage.png" alt="" id="fbImage"></a>
+                    
+                </div>
+            </div>  
+        </fieldset>
+        <fieldset><input class="boton" style="visibility:hidden;"></fieldset> 
+    </div>
+
+    </main>
+
+    <footer class="footer" >
+        <div class="cabecera">
+            <p>Official website Jäguer 2021 ®.</p>
+            <p>Copyright © 2021 Jäguer 2021. All rights reserved.</p>
+            <p>Para más información contacte con alguno de nuestros agentes.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+ </body>
+ 
+</html>
